@@ -8,7 +8,7 @@ import mutagen
 ALLOWED_EXTENSIONS = {'mp3', 'wav', 'm4a', 'aac', 'ogg'}
 MAX_FILE_SIZE_MB = 10
 MIN_DURATION_SEC = 30
-MAX_DURATION_SEC = 120
+MAX_DURATION_SEC = 45
 
 def validate_audio_file(file_path: str):
     file_size_mb = os.path.getsize(file_path) / (1024 * 1024)

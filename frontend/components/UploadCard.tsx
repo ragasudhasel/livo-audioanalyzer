@@ -64,7 +64,7 @@ export default function UploadCard({ onUpload }: { onUpload: (file: File) => voi
         </div>
         <div>
           <p className="text-xl font-medium text-white mb-1">Click to upload or drag and drop</p>
-          <p className="text-sm text-slate-400">MP3, WAV, M4A, AAC (30 seconds – 2 minutes)</p>
+          <p className="text-sm text-slate-400">MP3, WAV, M4A, AAC (30–45 seconds)</p>
         </div>
       </div>
 
