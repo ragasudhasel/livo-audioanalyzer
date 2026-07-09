@@ -8,8 +8,8 @@ app = FastAPI(title="PronounceAI API", version="1.0.0")
 # Setup CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.FRONTEND_URL],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

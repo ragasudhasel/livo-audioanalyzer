@@ -2,9 +2,9 @@ from faster_whisper import WhisperModel
 
 class SpeechService:
     def __init__(self):
-        # Initialize the model on CPU for universal compatibility.
-        # In a real deployed environment with a GPU, you would use device="cuda".
-        self.model = WhisperModel("base", device="cpu", compute_type="int8")
+        # Initialize Whisper model
+        # Using tiny.en to keep memory footprint under 200MB and avoid Render OOM crashes
+        self.model = WhisperModel(model_size_or_path="tiny.en", device="cpu", compute_type="int8")
 
     async def process(self, file_path: str) -> dict:
         # Transcribe audio using faster-whisper

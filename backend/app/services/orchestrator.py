@@ -67,7 +67,7 @@ class AnalysisOrchestrator:
                     processing_time_ms=processing_time_ms,
                     language=speech_result["language"],
                     duration_seconds=speech_result.get("duration", 0.0),
-                    model="faster-whisper-base"
+                    model="faster-whisper-tiny.en"
                 )
             )
             
